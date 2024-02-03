@@ -69,7 +69,7 @@ func Execute() {
 func init() {
 	rootCmd.Flags().StringVar(&checkHost, "check-host", "", "The hostname to check")
 	rootCmd.Flags().StringVar(&checkPort, "check-port", "", "The port to check")
-	rootCmd.Flags().StringVar(&listenHost, "listen-host", "localhost", "The hostname to listen on")
+	rootCmd.Flags().StringVar(&listenHost, "listen-host", "0.0.0.0", "The hostname to listen on")
 	rootCmd.Flags().StringVar(&listenPort, "listen-port", "8181", "The port to listen on")
 	rootCmd.Flags().DurationVar(&timeout, "timeout", 5*time.Second, "Timeout to check target")
 
