@@ -9,7 +9,7 @@ COPY . ./
 
 RUN CGO_ENABLED=0 GOOS=linux go build -o /check-port-api
 
-FROM golang:1-21-alpine
+FROM golang:alpine
 
 WORKDIR /
 
