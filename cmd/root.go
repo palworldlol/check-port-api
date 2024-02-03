@@ -26,7 +26,7 @@ var rootCmd = &cobra.Command{
 	Use:   "check-port-api",
 	Short: "A really simple API that responds UP or DOWN if a certain address+port combination is listening",
 	Long: `Host a really simple API that responds UP or DOWN if it finds a specific address+port is listenin.
-	This is useful to act as a proxy to check if a certain port is open on a system but its not actually exposed.`,
+This is useful to act as a proxy to check if a certain port is open on a system but its not actually exposed.`,
 	PreRun: func(cmd *cobra.Command, args []string) {
 		targetAddress = net.JoinHostPort(checkHost, checkPort)
 	},
