@@ -74,13 +74,12 @@ services:
       restart: unless-stopped
       container_name: palworld-server
       ports:
-        - 8212:8212/udp
-        - 27016:27016/udp
+        - 8211:8211/udp
+        - 27015:27015/udp
       environment:
          - PUID=1000
          - PGID=1000
-         - PORT=8212
-         - QUERY_PORT=27016
+         - PORT=8211
          - PLAYERS=8
          - MULTITHREADING=true
          - RCON_ENABLED=true
